@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.android.example.thaichana.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_checkinFragment"
+            app:destination="@id/checkinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="com.android.example.thaichana.ui.scan.ScanFragment"
+        android:label="@string/title_scan"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_navigation_scan_to_checkinFragment"
+            app:destination="@id/checkinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.android.example.thaichana.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/checkinFragment"
+        android:name="com.android.example.thaichana.ui.checkin.CheckinFragment"
+        android:label="@string/checkin"
+        tools:layout="@layout/fragment_checkin" >
+        <action
+            android:id="@+id/action_checkinFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>

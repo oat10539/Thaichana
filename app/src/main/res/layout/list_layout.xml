@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/placehistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:background="@color/Darkpurple"/>
+
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Datetime"
+            android:layout_below="@id/placehistory"
+            android:background="@color/Lightpurple"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
